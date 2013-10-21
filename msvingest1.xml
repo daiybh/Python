@@ -1,0 +1,20 @@
+<msvingest1>
+  <ChannelInfo.cardid category="通道设置" desc="该通道的板卡ID，由用户指定  例：第一通道配置为0；第二通道配置为1" text="卡号">0</ChannelInfo.cardid>
+  <version.version category="版本设置" desc="版本 msv-Olympic  msv-555 " text="版本">msv-Olympic</version.version>
+  <msMQ_msg.mqpath category="MQ消息设置" desc=";mqpath 中ip 在NotifyMap.ini 中配置&#xD;&#xA;;4211ppath   	DIRECT=TCP:%s\PRIVATE$\MSV_NOTIFY&#xD;&#xA;;555  path	DIRECT=TCP:127.0.0.1\PRIVATE$\Sobey555MSMQ" text="mq路径">DIRECT=TCP:127.0.0.1\PRIVATE$\Sobey555MSMQ</msMQ_msg.mqpath>
+  <Comm_Setup.comm_type category="通讯设置" desc="0 socket 1 ShareMem " text="通讯模式">0</Comm_Setup.comm_type>
+  <msMQ_msg.msmq category="MQ消息设置" desc="msMQ_msg" text="msmq">1</msMQ_msg.msmq>
+  <ChannelInfo.videosize category="通道设置" desc="1:SD 2:HD" text="高标清设置">2</ChannelInfo.videosize>
+  <LEFTTOP_POINT.py category="屏幕位置设置" desc="y" text="py">603</LEFTTOP_POINT.py>
+  <LEFTTOP_POINT.px category="屏幕位置设置" desc="x" text="px">0</LEFTTOP_POINT.px>
+  <ChannelInfo.ctrlport category="通道设置" desc="通道控制的以太网端口" text="控制端口">3100</ChannelInfo.ctrlport>
+  <ChannelInfo.cardtype category="通道设置" desc="1000:MG1000标清卡  3000:MG3000高清卡	2001:x1卡" text="该通道的板卡型号">2001</ChannelInfo.cardtype>
+  <SDI_SETUP.autodetect category="卡设置" desc="0:采用以下指定信号格式初始化，并且不自动识别信号   1:根据信号制式自动识别" text="自动侦测">0</SDI_SETUP.autodetect>
+  <!--Card_Initial.initial_signal category="MG卡设置" desc=";0:SD_PAL 1:HD_1920_1080_50I 2:SD_Ntsc29_97 3:HD_1920_1080_59_94I 4:SD_Ntsc30 5:HD_1920_1080_60I" text="MG卡初始化信号">1</Card_Initial.initial_signal-->
+  <Video_Size.video_std category="video_std" desc="video_std" text="video_std">2</Video_Size.video_std>
+  <ChannelInfo.mfsdir category="通道设置" desc="DIR_DEFAULT  DIR_BROADCAST  DIR_TRANSFER  DIR_COLLECTION " text="mfsdir">DIR_TRANSFER</ChannelInfo.mfsdir>
+  <SDI_SETUP.is_imx category="卡设置" desc="SDI_SETUP" text="是否是imx信号">0</SDI_SETUP.is_imx>
+  <SDI_SETUP.sdiformatSD category="卡设置" desc="1:_720_576_50I 2:_1920_1080_5994I:2  4:_1920_1080_50I 64:_720_512_5994I 65:_720_608_50I" text="卡初始化信号_标清">1</SDI_SETUP.sdiformatSD>
+  <SDI_SETUP.sdiformatHD category="卡设置" desc="1:_720_576_50I 2:_1920_1080_5994I:2  4:_1920_1080_50I 64:_720_512_5994I 65:_720_608_50I" text="卡初始化信号_高清">4</SDI_SETUP.sdiformatHD>
+  <ChannelInfo.channelid category="通道设置" desc="ChannelInfo" text="通道号">0</ChannelInfo.channelid>
+</msvingest1>

@@ -1,0 +1,7 @@
+# -*- coding: cp936 -*-
+import os
+'''∂¡»°
+'''
+svnCmd = "svn info"
+svnRet = os.popen(svnCmd).readlines()
+print(svnRet)

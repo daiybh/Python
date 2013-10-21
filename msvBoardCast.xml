@@ -1,0 +1,19 @@
+<msvBoardCast>
+  <CHANNEL_0.channel_id category="通道信息" desc="CHANNEL_0.channel_id" text="通道号">0</CHANNEL_0.channel_id>
+  <LanguageSet.language category="语言设置" desc="0:英文  1: 中文" text="语言">1</LanguageSet.language>
+  <CDD_BCCARD.synchorphase category="输出参数" desc="CDD_BCCARD.synchorphase" text="行相位">2872</CDD_BCCARD.synchorphase>
+  <CHANNEL_INFO.windowpositon_y category="通道信息" desc="CHANNEL_INFO.windowpositon_y" text="界面位置Y">30</CHANNEL_INFO.windowpositon_y>
+  <CDD_BCCARD.cardoutmode0 category="输出参数" desc="1:标清模式 2:高清模式" text="cardoutmode0">1</CDD_BCCARD.cardoutmode0>
+  <Version_Info.versiontype category="版本信息" desc="版本类型 0:4211P	1:555" text="versiontype">1</Version_Info.versiontype>
+  <CHANNEL_INFO.windowpositon_x category="通道信息" desc="CHANNEL_INFO.windowpositon_x" text="界面位置x">0</CHANNEL_INFO.windowpositon_x>
+  <CDD_BCCARD.enablelocpreview category="输出参数" desc="是否本地预监 0不允许 1允许" text="enablelocpreview">1</CDD_BCCARD.enablelocpreview>
+  <CDD_BCCARD.extmode category="输出参数" desc="0:内同步 1:数字外同步 2:模拟外同步 " text="extmode">0</CDD_BCCARD.extmode>
+  <CDD_BCCARD.usecard0 category="输出参数" desc="CDD_BCCARD.usecard0" text="对应使用卡号">0</CDD_BCCARD.usecard0>
+  <CDD_BCCARD.outaudiobit category="输出参数" desc="CDD_BCCARD.outaudiobit" text="输出音频位数">16</CDD_BCCARD.outaudiobit>
+  <CDD_BCCARD.syncverphase category="输出参数" desc="CDD_BCCARD.syncverphase" text="场相位">1122</CDD_BCCARD.syncverphase>
+  <CDD_BCCARD.hdshowsize category="输出参数" desc="CDD_BCCARD.hdshowsize" text="高清显示比例">2</CDD_BCCARD.hdshowsize>
+  <MFSTYPE.bismsvmfs category="mfs类型" desc="0 是555MFS  1 是MSV MFS" text="bismsvmfs">0</MFSTYPE.bismsvmfs>
+  <CHANNEL_0.usecard_num category="通道信息" desc="CHANNEL_0.usecard_num" text="该通道使用卡号">0</CHANNEL_0.usecard_num>
+  <CDD_BCCARD.sdshowsize category="输出参数" desc="CDD_BCCARD.sdshowsize" text="标清显示比例">1</CDD_BCCARD.sdshowsize>
+  <CHANNEL_0.comm_port category="通道信息" desc="CHANNEL_0.comm_port" text="控制端口">5130</CHANNEL_0.comm_port>
+</msvBoardCast>

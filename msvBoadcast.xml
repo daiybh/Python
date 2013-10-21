@@ -1,0 +1,19 @@
+<msvBoadcast>
+  <CHANNEL_0.channel_id category="CHANNEL_0" desc="CHANNEL_0" text="channel_id">0</CHANNEL_0.channel_id>
+  <LanguageSet.language category="LanguageSet" desc="LanguageSet" text="language">1</LanguageSet.language>
+  <CDD_BCCARD.synchorphase category="CDD_BCCARD" desc="CDD_BCCARD" text="synchorphase">2872</CDD_BCCARD.synchorphase>
+  <CHANNEL_INFO.windowpositon_y category="CHANNEL_INFO" desc="CHANNEL_INFO" text="windowpositon_y">30</CHANNEL_INFO.windowpositon_y>
+  <CDD_BCCARD.cardoutmode0 category="CDD_BCCARD" desc="CDD_BCCARD" text="cardoutmode0">1</CDD_BCCARD.cardoutmode0>
+  <Version_Info.versiontype category="Version_Info" desc="Version_Info" text="versiontype">1</Version_Info.versiontype>
+  <CHANNEL_INFO.windowpositon_x category="CHANNEL_INFO" desc="CHANNEL_INFO" text="windowpositon_x">0</CHANNEL_INFO.windowpositon_x>
+  <CDD_BCCARD.enablelocpreview category="CDD_BCCARD" desc="CDD_BCCARD" text="enablelocpreview">1</CDD_BCCARD.enablelocpreview>
+  <CDD_BCCARD.extmode category="CDD_BCCARD" desc="CDD_BCCARD" text="extmode">0</CDD_BCCARD.extmode>
+  <CDD_BCCARD.usecard0 category="CDD_BCCARD" desc="CDD_BCCARD" text="usecard0">0</CDD_BCCARD.usecard0>
+  <CDD_BCCARD.outaudiobit category="CDD_BCCARD" desc="CDD_BCCARD" text="outaudiobit">16</CDD_BCCARD.outaudiobit>
+  <CDD_BCCARD.syncverphase category="CDD_BCCARD" desc="CDD_BCCARD" text="syncverphase">1122</CDD_BCCARD.syncverphase>
+  <CDD_BCCARD.hdshowsize category="CDD_BCCARD" desc="CDD_BCCARD" text="hdshowsize">2</CDD_BCCARD.hdshowsize>
+  <MFSTYPE.bismsvmfs category="MFSTYPE" desc="MFSTYPE" text="bismsvmfs">0</MFSTYPE.bismsvmfs>
+  <CHANNEL_0.usecard_num category="CHANNEL_0" desc="CHANNEL_0" text="usecard_num">0</CHANNEL_0.usecard_num>
+  <CDD_BCCARD.sdshowsize category="CDD_BCCARD" desc="CDD_BCCARD" text="sdshowsize">1</CDD_BCCARD.sdshowsize>
+  <CHANNEL_0.comm_port category="CHANNEL_0" desc="CHANNEL_0" text="comm_port">5130</CHANNEL_0.comm_port>
+</msvBoadcast>
