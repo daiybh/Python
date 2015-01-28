@@ -10,45 +10,56 @@
 
 import os
 import sys
+import threading
 
 def main():
     #处理此脚本所在的目录和他的子目录
-    findf(os.path.split(sys.argv[0])[0])
+    doThread = DoThread(searchPath=os.path.split(sys.argv[0])[0])
+    #doThread.findf(os.path.split(sys.argv[0])[0])
+    doThread.start()
 
-def findf(target):
-    """target为要操作的目录
+class DoThread(threading.Thread):
+        def __init__(self,searchPath):
+            super(DoThread,self).__init__()
+            self.searchpath=searchPath
+        
+        def run(self):
+            self.findf(self.searchpath)
+        
+        def findf(self,target):
+            """target为要操作的目录
 
-    此函数遍历该目录下的文件,并操作文件名中包含特定字符的文件
-    """
-    for name in os.listdir(target):
-        aname=os.path.join(target,name)
-        if os.path.isfile(aname):
-            print(aname)
-            if '(冲突' in name:
-                print(name)
-                try:
-                    nametocompare=name[:name.find('(冲突')]+\
-                        name[name.rindex('.'):]
-                    anametocompare=os.path.join(target,nametocompare)
-                except ValueError:
-                    nametocompare=name[:name.find('(冲突')]
-                    anametocompare=os.path.join(target,nametocompare)
-                comparef_delete_later(aname,anametocompare)
-        else:
-            findf(aname)
+            此函数遍历该目录下的文件,并操作文件名中包含特定字符的文件
+            """
+            for name in os.listdir(target):
+                aname=os.path.join(target,name)
+                if os.path.isfile(aname):
+                    print(aname)
+                    if '(冲突' in name:
+                        print(name)
+                        try:
+                            nametocompare=name[:name.find('(冲突')]+\
+                                name[name.rindex('.'):]
+                            anametocompare=os.path.join(target,nametocompare)
+                        except ValueError:
+                            nametocompare=name[:name.find('(冲突')]
+                            anametocompare=os.path.join(target,nametocompare)
+                        comparef_delete_later(aname,anametocompare)
+                else:
+                    self.findf(aname)
 
-def comparef_delete_later(f1,f2):
-    """比较两个文件修改时间的不同,两个参数f1和f2分别为两个文件的名(含路径)
+        def comparef_delete_later(self,f1,f2):
+            """比较两个文件修改时间的不同,两个参数f1和f2分别为两个文件的名(含路径)
 
-    比较后保留较新修改的文件(如f1),删掉较早的(如f2),并将f1名字改为f2
-    """
-    if (False==os.path.exists(f1)) or (False ==os.path.exists(f2)):
-        return
-    if os.stat(f1).st_mtime>os.stat(f2).st_mtime:
-        os.remove(f2)
-        os.rename(f1,f2)
-    else:
-        os.remove(f1)
+            比较后保留较新修改的文件(如f1),删掉较早的(如f2),并将f1名字改为f2
+            """
+            if (False==os.path.exists(f1)) or (False ==os.path.exists(f2)):
+                return
+            if os.stat(f1).st_mtime>os.stat(f2).st_mtime:
+                os.remove(f2)
+                os.rename(f1,f2)
+            else:
+                os.remove(f1)
 
 if __name__ == '__main__':
     main()
